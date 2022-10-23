@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.note.new {
+    background-color: rgb(214, 148, 41);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(214, 148, 41); 
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.post {
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.post:hover {
+  background-color: rgb(199, 189, 177);
+  cursor: pointer;
+}
+
+
+.note {
+  background-color: rgba(111, 212, 80, 0.879);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight {
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.highlight:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
